@@ -1,0 +1,350 @@
+/* Väripaletti
+
+harmaan musta
+HEX: #3e4444
+
+kirkas vihreä
+HEX: #82b74b
+
+tumma vihreä
+HEX: #405d27
+
+keski ruskea
+HEX: #c1946a
+
+*/
+
+/* Sivujen yhteiset tyylit alkaa tästä */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #405d27;
+}
+
+.main-content {
+    background-color: #3e4444;
+    width: 100%;
+    margin: 0 !important;
+}
+
+.header {
+    background-color: #82b74b;
+    width: 100%;
+    height: 150px;
+    margin: 0;
+}
+
+.footer {
+    background-color: #c1946a;
+    width: 100%;
+    height: 150px;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-content {
+    margin-top: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.footer-text {
+    margin: 0;
+    padding-top: 51px;
+}
+
+.logo {
+    display: absolute;
+    height: 150px;
+    width: 150px;
+    margin-top: -30px;
+    margin-left: 0;
+}
+
+.navbar {
+    position: relative;
+    margin: auto;
+    max-width: 768px;
+    height: 30px;
+}
+
+.navbar-button {
+    display: inline-block;
+    height: 30px;
+    margin-top: 60px;
+    margin-left: 6px;
+    margin-right: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    background-color: #82b74b;
+}
+
+.navbar-mobile {
+    display: none;
+}
+
+.navbar-button:hover {
+    background: #82b74b;
+    color: #000000;
+    border-radius: 2px;
+    padding-left: 6px;
+    padding-bottom: 6px;
+    box-shadow: 5px 5px 10px;
+}
+
+.navbar-text {
+    text-align: center;
+    margin-top: 0;
+    cursor: pointer;
+    width: 100%;
+    font-size: 30px;
+    font-family: Century Gothic;
+    letter-spacing: 5px;
+    color: #000000;
+}
+
+.navbar-link {
+    text-decoration: none;
+}
+
+.active {
+    background: #82b74b;
+    color: #000000;
+    border-radius: 2px;
+    padding-left: 6px;
+    padding-bottom: 6px;
+    box-shadow: 5px 5px 10px;
+}
+
+/* Sivujen yhteiset mobiili tyylit alkaa tästä */
+@media (min-width: 0px) and (max-width: 767px) {
+    .header {
+        background-color: #82b74b;
+        width: 100%;
+        height: 30px;
+        margin: 0;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .footer {
+        background-color: #c1946a;
+        width: 100%;
+        height: 50px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .footer-content {
+        margin-top: 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+    .footer-text {
+        margin: 0;
+        padding-top: 7px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .navbar-mobile {
+        display: block;
+        position: fixed;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        height: 30px;
+        background-color: #405d27;
+        border: 5px solid #405d27;
+        box-shadow: 5px 5px 10px;
+        padding-bottom: 5px !important;
+    }
+
+    .menu-text {
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: center;
+        font-size: 30px;
+        font-family: Century Gothic;
+        letter-spacing: 5px;
+        color: #000000;
+    }
+
+    .navbar-mobile-button {
+        display: none;
+        width: 100%;
+        height: 30px;
+        padding-top: 4px;
+        padding-bottom: 11px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-left: -5px;
+        box-shadow: 5px 5px 10px;
+    }
+
+    .navbar-mobile-button.mobile-active {
+        background-color: #82b74b !important;
+    }
+
+    .navbar-text {
+        margin-top: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+        font-family: Century Gothic;
+        letter-spacing: 5px;
+        color: #000000;
+    }
+
+    .logo {
+        display: block;
+        position: fixed;
+        margin-top: 0px;
+        height: 45px;
+        width: 45px;
+    }
+
+    #tyopaikat-tiedot {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+/* Sivujen yhteiset tabletti ja laptop tyylit alkaa tästä */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .navbar-button {
+        display: inline-block;
+        height: 30px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-bottom: 6px;
+        padding-left: 6px;
+    }
+
+    .navbar {
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 20px;
+        max-width: 416px;
+        height: 30px;
+    }
+
+    .logo {
+        margin-top: -50px;
+        margin-left: 0;
+    }
+}
+
+/* Sivujen yhteiset desktop tyylit alkaa tästä */
+@media (min-width: 1200px) {
+}
+
+/*  index.html/etusivun CSS (voisi tehdä myös sivukohtaiset css-tiedostot, 
+    joka auttaa sivuston tehokkuudessa, kun tiedostot pienenee ja vain tiettyjä 
+    tiedostoja käytetään esim. etusivulla) 
+*/
+
+#vastaus {
+    padding: 1%;
+}
+
+#vastaus ul {
+    margin-left: 0;
+    padding: 0;
+}
+
+#vastaus ul li {
+    margin-left: 0;
+    padding: 0;
+}
+
+#vastaus .sisalto {
+    margin-left: 20px !important;
+}
+
+#vastaus ul li:first-letter {
+    text-transform: uppercase;
+}
+
+.aihelinkit {
+    list-style-type: none;
+}
+
+/* digicage.html CSS alkaa */
+
+#digicafetiedot {
+    padding: 1%;
+}
+
+.digicafe-ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding: 0;
+}
+
+.digicafe-ul li {
+    margin-left: 0;
+    padding: 0;
+}
+
+.digicafe-ul li:first-letter {
+    text-transform: uppercase;
+}
+
+.digicafe-yhteystiedot-email:first-letter {
+    text-transform: lowercase !important;
+}
+
+.digicafe-ul.henkilokunta li {
+    text-transform: capitalize;
+}
+
+.digicafe-ul-otsikko {
+    font-weight: bold;
+}
+
+/* palaveri.html CSS alkaa tästä */
+
+#palaveritiedot {
+    padding: 1%;
+}
+
+#palaveritiedot ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding: 0;
+}
+
+#palaveritiedot ul li {
+    margin-left: 0;
+    padding: 0;
+}
+
+/* tyopaikat.html CSS alkaa tästä */
+
+#tyopaikat-tiedot {
+    padding: 1%;
+}
+
+#tyopaikat-tiedot ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding: 0;
+}
+
+#tyopaikat-tiedot ul li {
+    margin-left: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.restapilink {
+    text-decoration: none;
+    color: #82b74b;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digi-Cafe</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar">
+            <div class="navbar-button"><a href="index.html" class="navbar-link"><p class="navbar-text">Etusivu</p></a></div>
+            <div class="navbar-button active"><a href="digicafe.html" class="navbar-link"><p class="navbar-text">Digi-Cafe</p></a></div>
+            <div class="navbar-button"><a href="palaveri.html" class="navbar-link"><p class="navbar-text">Palaveri</p></a></div>
+            <div class="navbar-button"><a href="tyopaikat.html" class="navbar-link"><p class="navbar-text">Työpaikat</p></a></div>
+        </nav>
+        <nav class="navbar-mobile" onclick="navbarmobile()"><p class="menu-text">Menu</p>
+            <div class="navbar-mobile-button"><a href="index.html" class="navbar-link"><p class="navbar-text">Etusivu</p></a></div>
+            <div class="navbar-mobile-button mobile-active"><a href="digicafe.html" class="navbar-link"><p class="navbar-text">Digi-Cafe</p></a></div>
+            <div class="navbar-mobile-button"><a href="palaveri.html" class="navbar-link"><p class="navbar-text">Palaveri</p></a></div>
+            <div class="navbar-mobile-button"><a href="tyopaikat.html" class="navbar-link"><p class="navbar-text">Työpaikat</p></a></div>
+        </nav>
+        <img class="logo" src="logo1.png" alt="">
+    </div>
+    <main class="main-content">
+        <div class="content" onclick="navbarmobileclose()">
+            <div id="digicafetiedot"></div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-content"><p class="footer-text">&copy; Tuomo Ahonen<br>Digitekniikat - Oppimistehtävä 5</p></div>
+    </footer>
+    <script src="css.js"></script>
+    <script src="digicafe.js"></script>
+</body>
+</html>

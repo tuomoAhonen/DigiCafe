@@ -1,2 +1,3 @@
 # DigiCafe
-HTML, Javascript, CSS &amp; EXTRA: responsiveness without bootstrap - Digitekniikat kurssin oppimistehtävä 5
+NAVIGATION BAR responsiveness without bootstrap + Haaga-Helia/Digitekniikat JSON homework
+HTML, Javascript, CSS

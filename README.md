@@ -1,3 +1,2 @@
 # DigiCafe
-NAVIGATION BAR responsiveness without bootstrap + Haaga-Helia/Digitekniikat JSON homework
-HTML, Javascript, CSS
+Custom navigation bar & responsiveness with HTML, Javascript, CSS + Haaga-Helia/Digitekniikat JSON homework
